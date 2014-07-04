@@ -42,24 +42,29 @@
       "type": "package",
       "package": {
         "name": "wordpress/wordpress",
-        "version": "3.9",
+        "version": "3.9.1",
         "type": "webroot",
         "dist": {
           "type": "zip",
-          "url": "https://wordpress.org/wordpress-3.9.zip"
+          "url": "https://wordpress.org/wordpress-3.9.1.zip"
         },
         "require" : {
           "fancyguy/webroot-installer": "1.1.0"
         }
       }
+    },
+  	{
+      "type": "vcs",
+      "url": "https://github.com/kalenjohnson/wp-bootstrap-acf.git"
     }
   ],
   "require": {
     "php": ">=5.3.2",
-    "wordpress/wordpress": "3.9",
+    "wordpress/wordpress": "3.9.1",
     "fancyguy/webroot-installer": "1.1.0",
     "composer/installers": "v1.0.12",
-    "vlucas/phpdotenv": "~1.0.6"
+    "vlucas/phpdotenv": "~1.0.6",
+    "kalenjohnson/wp-bootstrap-acf": "dev-master"
   },
   "extra": {
     "installer-paths": {
